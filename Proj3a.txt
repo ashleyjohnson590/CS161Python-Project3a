@@ -1,0 +1,23 @@
+#Author: Ashley Johnson
+#Date: 10/2/2020
+#Description: Asks user how many integers they would like to enter and then displays the largest and smallest numbers.
+
+print("How many integers would you like to enter?")
+n = int(input())
+print("Please enter ", n, "integers.")
+maximum=int(input())
+minimum=maximum
+while n > 1:
+        number = int(input())
+
+        if number > maximum:
+            maximum = number
+        else:
+            maximum = maximum
+        if number < minimum:
+            minimum = number
+        else:
+            minimum = minimum
+        n=n-1
+print("min: ",minimum)
+print("max: ",maximum)
